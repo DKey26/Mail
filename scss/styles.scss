@@ -1,0 +1,147 @@
+
+@import 'settings/settings';
+@import "foundation";
+
+body, html{
+  -webkit-font-smoothing: antialiased;
+}
+
+.basic-link{
+  text-decoration: underline;
+}
+
+.btn{
+  display: inline-block;
+  vertical-align: top;
+}
+.font-large{
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.slogan{
+  color:$white !important;
+  margin-bottom: 0;
+}
+.body{
+  background: url('img/repeat-cubes.png') #000 !important;
+}
+
+.logo-wrap{
+  margin-bottom: 0;
+}
+.logo{
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+.header-top{
+  background: transparent !important;
+}
+
+strong{
+  font-weight: 500;
+}
+
+.section2-title{
+  font-size: 36px;
+  line-height: 42px;
+  color: $black;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.section2-subtitle{
+  color:$black;
+  margin-bottom: 50px;
+}
+
+.logo{
+  img{
+    width: 130px !important;
+    display: block;
+    height: 100px !important;
+  }
+}
+
+.text{
+  p{
+    line-height: 1.6;
+  }
+}
+
+.footer{
+  background: $grey !important;
+  *{
+    color:#fff;
+  }
+  .text-bottom{
+    font-size: 14px;
+  }
+  .phone-text{
+    font-size: 14px;
+  }
+  .contact-item-link{
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration: none;
+    white-space: nowrap;
+    span{
+      width: 145px;
+      display: inline-block;
+      text-decoration: underline;
+    }
+    img{
+      display: inline-block;
+      margin-right: 10px;
+      vertical-align:middle
+    }
+
+  }
+  .phone{
+    font-size: 24px;
+    position: relative;
+    color:#fff !important; 
+    *{
+      color:#fff !important; 
+    }
+    img{
+      display: inline-block;
+      vertical-align:middle; 
+      margin-right: 0px;
+    }
+    &:before{
+      content:'';
+      width: 27px;
+      height: 27px;
+      display: block;
+      background: url('http://rtcode.ru/email-test/img/phone.png') center no-repeat;
+    }
+  }
+  .color-gray{
+    color:#b2bac5;
+  }
+}
+
+
+@media only screen and (max-width: #{$global-breakpoint}) {
+
+  table.body .column, table.body .columns{
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  br{
+    display: none;
+  }
+  .icon-and-text{
+   
+    .icon-wrap{
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+
+  
+}
